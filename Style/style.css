@@ -91,7 +91,7 @@ nav {
 .banner-content h4 {
   color: rgb(71, 71, 71);
   font-family: Open Sans;
-  font-size: 35px;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 61px;
   text-align: left;
@@ -100,7 +100,7 @@ nav {
 .banner-content h1 {
   color: rgb(24, 24, 24);
   font-family: Open Sans;
-  font-size: 65px;
+  font-size: 4.06rem;
   font-weight: 700;
   line-height: 116px;
   text-align: left;
@@ -110,7 +110,7 @@ nav {
 .banner-content p {
   color: rgb(117, 117, 117);
   font-family: Open Sans;
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0%;
@@ -125,8 +125,6 @@ nav {
 
 .about-us {
   height: 472px;
-
-  /* max-width: 1600px; */
   margin: 50px 200px;
   border-radius: 10px;
   background: rgb(255, 248, 243);
@@ -143,7 +141,7 @@ nav {
 .about-us-content h3 {
   color: rgb(24, 24, 24);
   font-family: Open Sans;
-  font-size: 35px;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0%;
@@ -154,7 +152,7 @@ nav {
 .about-us-content p {
   color: rgb(117, 117, 117);
   font-family: Open Sans;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0%;
@@ -185,8 +183,6 @@ address {
 .what-i-do {
   text-align: center;
   margin-bottom: 130px;
-  /* max-width: 1600px;
-  margin: auto; */
 }
 .what-i-do .contents {
   width: 773px;
@@ -196,7 +192,7 @@ address {
 .what-i-do h3 {
   color: rgb(24, 24, 24);
   font-family: Open Sans;
-  font-size: 35px;
+  font-size: 2.3rem;
   font-weight: 700;
   line-height: 48px;
   margin-top: 130px;
@@ -206,7 +202,7 @@ address {
 .what-i-do p {
   color: rgb(117, 117, 117);
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 50px;
@@ -230,7 +226,7 @@ address {
 .card h4 {
   color: rgb(24, 24, 24);
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 27px;
   letter-spacing: 0%;
@@ -242,7 +238,7 @@ address {
 .card p {
   color: rgb(117, 117, 117);
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 28px;
   margin: 20px 33px 30px 33px;
@@ -369,4 +365,180 @@ footer {
 textarea {
   padding: 15px 300px 130px 30px;
   outline: none;
+}
+
+/* responsive media query */
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    padding: 0;
+  }
+
+  .form input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+
+  .content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .form {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  textarea {
+    padding: 20px;
+  }
+  form {
+    padding: 10px 0;
+  }
+
+  /* resume */
+
+  /* resume section style */
+
+  .resume-container {
+    margin: 0 auto;
+  }
+
+  .resume-container > div {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    margin-top: 20px;
+  }
+
+  .education > h2,
+  .experience > h2 {
+    font-size: 1.8rem;
+  }
+
+  .education div h3,
+  .experience div h3 {
+    font-size: 1.4rem;
+  }
+
+  .education div h6,
+  .experience div h6 {
+    font-size: 1.2rem;
+  }
+  .education div p,
+  .experience div p {
+    font-size: 1rem;
+  }
+
+  .resume-container button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .what-i-do .all-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    /* width: 85%; */
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .what-i-do {
+    text-align: center;
+    margin-bottom: 130px;
+    /* max-width: 1600px;
+  margin: auto; */
+  }
+  .what-i-do .contents {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .about-us {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .about-us .about-us-content {
+    text-align: center;
+    margin: 0;
+  }
+  .info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    /* margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 200px; */
+  }
+  #hero .logo h4 {
+    font-size: 2rem;
+  }
+
+  .menu > ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    /* margin-left: 200px; */
+    width: 85%;
+    margin: auto;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1.12rem;
+  }
+
+  #hero {
+    height: auto;
+  }
+  .banner-image img {
+    width: 90%;
+  }
+
+  .button-box .btn {
+    margin-bottom: 10px;
+  }
 }
